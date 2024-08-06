@@ -212,7 +212,7 @@ transform: translateY(-15px);
 }
 
   
-@media (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .fb, .ig, .tiktok, .twitter {
       position: relative;
       bottom: 0;
@@ -223,15 +223,6 @@ transform: translateY(-15px);
       margin-top: 20px;
       z-index: 1;
     }
-.home{
-    background: url(wallpaper.png);
-    background-size: cover;
-		scroll-behavior: smooth;
-}
-
-@media only screen and (max-width: 46.1875cm)
-
-{
     .home {
         background-size: cover;
         background-position: center;
@@ -239,5 +230,7 @@ transform: translateY(-15px);
         width: 100vw; /* Đảm bảo chiều rộng bằng 100% viewport width */
     }
 }
-  }
+
+
+  
  
