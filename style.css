@@ -138,7 +138,8 @@ header{
 .home{
     background: url(wallpaper.png);
     background-size: cover;
-		scroll-behavior: smooth;
+    background-position: center;
+    scroll-behavior: smooth;
 }
 
 
@@ -226,6 +227,17 @@ transform: translateY(-15px);
     background: url(wallpaper.png);
     background-size: cover;
 		scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 46.1875cm)
+
+{
+    .home {
+        background-size: cover;
+        background-position: center;
+        height: 100vh; /* Đảm bảo chiều cao bằng 100% viewport height */
+        width: 100vw; /* Đảm bảo chiều rộng bằng 100% viewport width */
+    }
 }
   }
  
