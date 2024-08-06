@@ -222,5 +222,10 @@ transform: translateY(-15px);
       margin-top: 20px;
       z-index: 1;
     }
+.home{
+    background: url(wallpaper.png);
+    background-size: cover;
+		scroll-behavior: smooth;
+}
   }
  
