@@ -212,24 +212,97 @@ transform: translateY(-15px);
 }
 
   
-@media only screen and (max-width: 767px) {
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+      padding: 10px 20px;
+    }
+  
+    .logo {
+      font-size: 20px;
+    }
+  
+    .navbar a {
+      font-size: 16px;
+      margin-left: 20px;
+    }
+  
+    .home-content h1 {
+      font-size: 40px;
+    }
+  
+    .home-content h3 {
+      font-size: 24px;
+    }
+  
+    .home-content p {
+      font-size: 14px;
+    }
+  
+    .btn-box a {
+      width: 120px;
+      font-size: 16px;
+    }
+  
     .fb, .ig, .tiktok, .twitter {
-      position: relative;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      display: flex;
-      justify-content: space-evenly;
+      position: static;
+      width: auto;
       margin-top: 20px;
-      z-index: 1;
+      display: flex;
+      justify-content: center;
     }
-    .home {
-        background-size: cover;
-        background-position: center;
-        height: 100vh; /* Đảm bảo chiều cao bằng 100% viewport height */
-        width: 100vw; /* Đảm bảo chiều rộng bằng 100% viewport width */
+  
+    .fb img, .ig img, .tiktok img, .twitter img {
+      width: 40px;
     }
-}
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      padding: 10px 10px;
+    }
+  
+    .logo {
+      font-size: 18px;
+    }
+  
+    .navbar a {
+      font-size: 14px;
+      margin-left: 15px;
+    }
+  
+    .home-content h1 {
+      font-size: 32px;
+    }
+  
+    .home-content h3 {
+      font-size: 20px;
+    }
+  
+    .home-content p {
+      font-size: 12px;
+    }
+  
+    .btn-box {
+      width: auto;
+      height: auto;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .btn-box a {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    .fb, .ig, .tiktok, .twitter {
+      margin-top: 10px;
+    }
+  
+    .fb img, .ig img, .tiktok img, .twitter img {
+      width: 30px;
+    }
+  }
 
 
   
